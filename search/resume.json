@@ -1,0 +1,212 @@
+{
+  "attested": true,
+  "attested_date": "2026-06-24",
+  "attestation_note": "Three errors corrected: (1) Accenture role collapsed a promotion into a single title — split into Associate Software Engineer (Jul 2021) then Custom Software Engineering Analyst (~Feb 2022, promoted within ~8 months); (2) Distributed Super Resolution Framework date was 2025-01 — corrected to 2026-01; (3) graduation date precision was 2026-08 — corrected to specific date 2026-08-29.",
+  "basics": {
+    "name": "G V Sriram",
+    "phone": "+1 857-396-7725",
+    "email": "garimella.sri@northeastern.edu",
+    "linkedin": "linkedin.com/in/gvsriram",
+    "github": "github.com/include-ram",
+    "location": "Boston, MA"
+  },
+  "education": [
+    {
+      "type": "degree",
+      "degree": "MS",
+      "field": "Computer Software Engineering Systems",
+      "institution": "Northeastern University",
+      "location": "Boston, MA",
+      "start_date": null,
+      "end_date": "2026-08-29",
+      "end_date_qualifier": "expected",
+      "gpa": 3.6,
+      "gpa_scale": 4.0
+    }
+  ],
+  "experience": [
+    {
+      "type": "job",
+      "company": "StageZero Health",
+      "title": "Software Engineering Intern",
+      "employment_type": "internship",
+      "location": "Boston, MA",
+      "start_date": "2026-01",
+      "end_date": "2026-05",
+      "technologies": ["React Native", "Next.js", "TypeScript", "Firebase", "Cloud Run", "AWS", "Pinecone", "pdfplumber", "Tesseract", "LangChain"],
+      "highlights": [
+        {
+          "description": "Shipped a cancer-risk app that guides users through a risk questionnaire and classifies them into personalized cancer-risk personas",
+          "metric": "onboarding drop-off",
+          "metric_change": "-35%",
+          "technologies": ["React Native", "Next.js", "Google OAuth"]
+        },
+        {
+          "description": "Built a RAG pipeline parsing scanned medical reports via OCR; extracted insights fed a risk model to generate breast-cancer risk profiles",
+          "metric": "OCR accuracy",
+          "metric_value": "95%+",
+          "documents_processed": "100+",
+          "technologies": ["Tesseract", "RAG"]
+        },
+        {
+          "description": "Built a semantic-search microservice over patient records",
+          "metric": "document query time",
+          "metric_change": "-40%",
+          "technologies": ["Pinecone", "AWS", "GCP"]
+        },
+        {
+          "description": "Improved deployment reliability and reduced incidents via CI/CD and error monitoring",
+          "metric": "deployment reliability",
+          "metric_change": "+30%",
+          "secondary_metric": "incidents",
+          "secondary_metric_change": "-25%",
+          "technologies": ["Firebase", "Cloud Run", "CI/CD", "Sentry"]
+        }
+      ]
+    },
+    {
+      "type": "job",
+      "company": "Accenture",
+      "title": "Custom Software Engineering Analyst",
+      "title_note": "Promoted from Associate Software Engineer within ~8 months of joining",
+      "title_history": [
+        {"title": "Associate Software Engineer", "start_date": "2021-07", "end_date": "2022-02", "end_date_approximate": true},
+        {"title": "Custom Software Engineering Analyst", "start_date": "2022-02", "start_date_approximate": true, "end_date": "2024-06"}
+      ],
+      "employment_type": "full-time",
+      "location": "Hyderabad, India",
+      "start_date": "2021-07",
+      "end_date": "2024-06",
+      "technologies": ["Python", "Java", "Tableau", "ChatGPT API", "Pandas", "NumPy", "Scikit-learn", "NLTK", "SQL"],
+      "highlights": [
+        {
+          "description": "Migrated financial data via Python/Java ETL pipelines and flagged data-quality issues; promoted in 7 months",
+          "client": "Bank of America",
+          "data_volume": "500TB+",
+          "issues_flagged": "2,000+",
+          "transactions_scanned": "10M+",
+          "metric": "data reliability",
+          "metric_change": "+35%",
+          "technologies": ["Python", "Java", "ETL"]
+        },
+        {
+          "description": "Built Tableau dashboards across applications to improve deployment reliability",
+          "client": "Travelers Insurance",
+          "apps_covered": "150+",
+          "metric": "deployment reliability",
+          "metric_change": "+20%",
+          "technologies": ["Tableau"]
+        },
+        {
+          "description": "Built a Python NLP ticketing system routing weekly tickets",
+          "client": "DTE Energy",
+          "tickets_per_week": "10K+",
+          "routing_accuracy": "92%",
+          "metric": "SLA compliance",
+          "metric_change": "+30%",
+          "technologies": ["Python", "NLP"]
+        },
+        {
+          "description": "Improved chatbot accuracy via LLM API and sentiment analysis; deployed to multiple teams",
+          "client": "Momentum",
+          "teams_deployed": 5,
+          "metric": "chatbot accuracy",
+          "metric_change": "+25%",
+          "technologies": ["ChatGPT API", "sentiment analysis"]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "type": "project",
+      "name": "AI World — Generative-Agent Simulation",
+      "status": "in progress",
+      "start_date": "2026-06",
+      "end_date": "present",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "pgvector", "Ollama"],
+      "highlights": [
+        {
+          "description": "Built a persistent simulation of up to 7 LLM agents, each running a full cognitive loop (perceive, retrieve, decide, act, reflect) per tick, with population capped via a birth/death lifecycle"
+        },
+        {
+          "description": "Persisted all world state and agent memories in PostgreSQL/pgvector so the simulation survives full Docker restarts with memory and lineage intact across sessions"
+        },
+        {
+          "description": "Implemented emergent behaviors including conversation, conflict/death, teaching, and reproduction with LLM-generated child personas and blended inherited traits"
+        }
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Distributed Super Resolution Framework",
+      "status": "completed",
+      "start_date": "2026-01",
+      "end_date": "2026-01",
+      "technologies": ["PyTorch", "Multi-GPU"],
+      "highlights": [
+        {
+          "description": "Built an image super-resolution system combining ESRGAN and two VQGAN-Transformer architectures, benchmarking perceptual quality across models",
+          "technologies": ["ESRGAN", "VQGAN-Transformer"]
+        },
+        {
+          "description": "Optimized distributed training with gradient accumulation and mixed precision",
+          "speedup": "1.7x",
+          "memory_reduction": "40%",
+          "technologies": ["DDP", "FSDP"]
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "type": "achievement",
+      "title": "1st Place — Precision Neuroscience BCI Hackathon",
+      "prize": "$1,000",
+      "year": 2026,
+      "description": "Achieved 92% accuracy on 1024-channel ECoG classification with <5ms latency and <1MB model size using EEGNet with PCA (1024→32 channels) for real-time edge deployment, in 48 hours",
+      "technologies": ["EEGNet", "PCA"]
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    {"type": "skill", "name": "Python", "category": "Languages"},
+    {"type": "skill", "name": "Java", "category": "Languages"},
+    {"type": "skill", "name": "TypeScript", "category": "Languages"},
+    {"type": "skill", "name": "JavaScript", "category": "Languages"},
+    {"type": "skill", "name": "SQL", "category": "Languages"},
+    {"type": "skill", "name": "C", "category": "Languages"},
+    {"type": "skill", "name": "HTML/CSS", "category": "Languages"},
+    {"type": "skill", "name": "FastAPI", "category": "Backend & Systems"},
+    {"type": "skill", "name": "Flask", "category": "Backend & Systems"},
+    {"type": "skill", "name": "Spring Boot", "category": "Backend & Systems"},
+    {"type": "skill", "name": "Node.js", "category": "Backend & Systems"},
+    {"type": "skill", "name": "REST APIs", "category": "Backend & Systems"},
+    {"type": "skill", "name": "GraphQL", "category": "Backend & Systems"},
+    {"type": "skill", "name": "microservices", "category": "Backend & Systems"},
+    {"type": "skill", "name": "async processing", "category": "Backend & Systems"},
+    {"type": "skill", "name": "multithreading", "category": "Backend & Systems"},
+    {"type": "skill", "name": "OOP", "category": "Backend & Systems"},
+    {"type": "skill", "name": "data structures & algorithms", "category": "Backend & Systems"},
+    {"type": "skill", "name": "PostgreSQL", "category": "Databases"},
+    {"type": "skill", "name": "Redis", "category": "Databases"},
+    {"type": "skill", "name": "MongoDB", "category": "Databases"},
+    {"type": "skill", "name": "MySQL", "category": "Databases"},
+    {"type": "skill", "name": "schema design", "category": "Databases"},
+    {"type": "skill", "name": "indexing", "category": "Databases"},
+    {"type": "skill", "name": "query optimization", "category": "Databases"},
+    {"type": "skill", "name": "caching", "category": "Databases"},
+    {"type": "skill", "name": "AWS (EC2, Lambda, S3, RDS, ECS, CloudWatch)", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "Docker", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "Kubernetes", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "Terraform", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "GitHub Actions CI/CD", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "Linux/Unix", "category": "Cloud & DevOps"},
+    {"type": "skill", "name": "PyTorch", "category": "AI/ML"},
+    {"type": "skill", "name": "TensorFlow", "category": "AI/ML"},
+    {"type": "skill", "name": "Scikit-learn", "category": "AI/ML"},
+    {"type": "skill", "name": "LangChain", "category": "AI/ML"},
+    {"type": "skill", "name": "RAG (Pinecone, pgvector)", "category": "AI/ML"},
+    {"type": "skill", "name": "LLM evaluation", "category": "AI/ML"}
+  ]
+}

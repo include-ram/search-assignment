@@ -1,0 +1,46 @@
+# Job-search profile
+# Generated: 2026-06-24
+
+target_role:
+  titles:
+    - Software Engineer
+    - AI Engineer
+    - Machine Learning Engineer
+  domains: [Software Engineering, AI, ML]
+  seniority: entry-to-early-career  # new-grad / early-career
+
+visa:
+  type: F-1
+  graduation_date: 2026-08-29
+  opt:
+    status: not_yet_applied
+    standard_opt_months: 12              # standard post-completion OPT
+    stem_extension_months: 24            # STEM extension adds 24 months on top (36 total)
+    stem_extension_eligible: uncertain   # CONFIRM with DSO — depends on degree CIP code
+    unemployment_days_used: 0
+    unemployment_ceiling_days: 90        # cumulative cap during standard OPT
+    buffer_target_days: 80               # stay below the 90-day ceiling by this margin
+  notes: >
+    STEM OPT eligibility unconfirmed — depends on whether the degree CIP code is
+    on the DHS STEM list. If eligible, the 24-month STEM extension stacks on the
+    12-month standard OPT (36 months total). Must verify with the DSO before
+    relying on the extension. Standard 12-month OPT assumed as the baseline.
+
+geography:
+  home_base: Boston, MA
+  open_to_relocation: true
+  scope: USA (anywhere)
+  remote: true
+
+industry_preferences:
+  sectors: any
+  hard_exclusions: none
+
+company_size:
+  preference: any
+
+sponsorship_required: true   # HARD GATE
+sponsorship_gate:
+  rule: >
+    Any company with no H-1B sponsorship history is a skip, regardless of fit.
+  enforcement: hard
